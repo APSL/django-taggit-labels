@@ -2,4 +2,5 @@
     {% for tag in selected_tags %}
         <li data-tag-name="{{ tag.value_field }}" class="{{ tag.field_class }}">{{ tag.label_field }}</li>
     {% endfor %}
+    {{ input_field }}
 </ul>
