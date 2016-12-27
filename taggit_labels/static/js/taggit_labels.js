@@ -6,9 +6,8 @@
 (function($) {
   $(document).ready(function() {
     $(".taggit-labels").closest("div").each(function(i) {
-      var inputs = $(this).find(".taggit-labels + input")[0];
+      var inputs = $(this).find(".taggit-labels input")[0];
       var tagItems = $(this).find("ul.tags li");
-      var tagList = inputs.value.split(", ");
       tagItems.click(function() {
         var tagList = inputs.value.split(", ");
         var tagName = $(this).attr("data-tag-name");
